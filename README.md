@@ -1,2 +1,8 @@
-# codeblog
-It is a collection of blog, code, resource and tips which I have gathered overtime learning.
+# the_code_blog
+---
+## CP_blogs
+---
+## 100_days_of_code
+---
+## about_the_code_blog
+
