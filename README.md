@@ -11,7 +11,7 @@
 ## about_the_code_blog
 
 the_code_blog is a documentational blog where I will record all my learnings. My main focus would be on 2 topics:
-1. [Competetive Programming](cp_blog)
+1. [Competitive Programming](cp_blog)
 1. [100 Days Of Code](100_days_of_code)
 
 These topics will go hand in hand as in 100_days_of_code I will learn new topics everyday and I will be able to practive that topic in cp_blog.
@@ -25,7 +25,7 @@ Fields of Intrests:
 - Competitive Programming
 - Open Source Development
 - AI/ML
-- UX Research and Desing
+- UX Research and Design
 - Web Development
 
 **Personal Links:** 
