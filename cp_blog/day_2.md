@@ -38,5 +38,31 @@ int main(){
 ## Problem #1 Beautiful Matrix
 ### [Problem Statement](http://codeforces.com/problemset/problem/263/A)
 ### Though Process:
+We have to move 1 from any given position to middle of the matrix. By simple permutations we know that to move a given number from one position to another given position in a matrix we have to find absolute differnce of their corrdinate and it will give the number of steps one need to take in that direction.
+
+While taking input I am also searching for 1 so that I can get its corrdinate.(To reduce time)
 ### Related Topics:
 ### Code:
+```c++
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main(){
+    int arr[5][5];
+    int x,y;
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            cin >> arr[i][j];
+            if(arr[i][j]==1){
+                x=i;
+                y=j;
+            }
+        }
+    }
+    x = abs(x-2);
+    y = abs(y-2);
+    cout << x+y;
+}
+```
