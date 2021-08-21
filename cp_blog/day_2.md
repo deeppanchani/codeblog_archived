@@ -1,5 +1,5 @@
 # CP blog - Day 2
-## Number of Problems Solved: 1/5
+## Number of Problems Solved: 2/5
 
 ## Problem #1 Young Physicist
 ### [Problem Statement](http://codeforces.com/problemset/problem/69/A)
