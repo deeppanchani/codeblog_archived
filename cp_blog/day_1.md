@@ -1,5 +1,5 @@
 # CP blog - Day 1
-## Number of Problems Solved: 1/5
+## Number of Problems Solved: 2/5
 
 ### Problem #1 Chef and Spells
 #### [Problem Statement](https://www.codechef.com/LTIME98C/problems/CHFSPL)
@@ -113,7 +113,7 @@ int main() {
 }
 // again a silly mistake
 ```
-In above code in am checking for y==1 instead of y!=0.
+In above code I am checking for y==1 instead of y!=0.
 ```c++
 #include <iostream>
 #include <bits/stdc++.h>
@@ -157,5 +157,51 @@ int main() {
 ### Problem #3 Beautiful Pairs 
 #### [Problem Statement](https://www.codechef.com/LTIME98C/problems/BUTYPAIR)
 #### Though Process:
+I had some hard time understanding the question but the question was simple. It can be solved easyly once we get all the data regarding the repetation and total number of number presents.
+So we will know the total number of numbers from the input now we have to find number of duplicates.
 #### Related Topics:
 #### Code:
+```c++
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin >> t;
+	while(t--){
+	    int N;
+	    cin >> N;
+	    
+	    long arr[N];
+	    
+	    for(int i=0;i<N;i++){
+	        cin >> arr[i];
+	    }
+	    
+	    int count=0;
+	    
+	    for(int i=0; i<N; i++)
+        {
+            for(int j=i+1; j<N; j++)
+            {
+                if(arr[i] == arr[j])
+                {
+                    count++;
+                    break;                
+                }
+            }
+        }
+        if(count>0){
+            count++;
+        }
+        int ans =(N*(N-1));
+        cout << ans-count << endl;
+	}
+	return 0;
+}
+
+```
+
+Using above code I am getting TLE. So I need a better storage option than array. One thing I can think of is Hash Table or Maps. I Haven't Implemented them in C++. So will attemt this after learning more.
+#### Time Taken: 15min(TBC)
