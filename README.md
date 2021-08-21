@@ -3,6 +3,7 @@
 ## cp_blog
 
 - [Day 1](cp_blog/day_1.md)
+- [Day 2](cp_blog/day_2.md)
 
 ## 100_days_of_code
 
