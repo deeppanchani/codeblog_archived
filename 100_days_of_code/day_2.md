@@ -219,6 +219,60 @@ C++ has a set of primitive types that includes
     <code>double</code> represents two words(64 bits).
     <code>long double</code> represents either three or four words(96 or 128 bits).
 
+**Signed and Unsigned Types**
+
+Except for bool and the extended character types, the integral typesmay be signed
+or unsigned.
+
+<code>signed</code> type represents negative or positive numbers (including zero).
+<code>unsigned</code> type represents only values greater than or equal to zero.
+
+<code>int, short, long, long long</code> are all signed by default. We obtain unsigned tye by adding <code>unsigned</code>. For Eg.
+```c++
+unsigned long variable;
+```
+Unlike the other integer types, there are three distinct basic character types: 
+1. char
+1. signed char
+1. unsigned char.
+
+<code>char</code> is not the same type as <code>signed char</code>
+
+**A few rules of thumb can be useful in deciding which type to use:**
+• Use an unsigned type when you know that the values cannot be negative.
+
+• Use int for integer arithmetic. short is usually too small and, in practice, long often has the same size as int. If your data values are larger than the minimum guaranteed size of an int, then use long long.
+
+• Do not use plain char or bool in arithmetic expressions. Use them only to hold characters or truth values. Computations using char are especially problematic because char is signed on some machines and unsigned on others. If you need a tiny integer, explicitly specify either signed char or unsigned char.
+
+• Use double for floating-point computations; float usually does not have enough precision, and the cost of double-precision calculations versus singleprecision is negligible. In fact, on some machines, double-precision operations are faster than single. The precision offered by long double usually is unnecessary and often entails considerable run-time cost.
+
+### Type Conversions
+
+The type of an object defines the data that an object might contain and what operations that object can perform.
+
+Type conversions happen automatically when we use an object of one type where an object of another type is expected.
+
+```c++
+bool b = 42; // b is true
+int i = b; // i has value 1
+i = 3.14; // i has value 3
+double pi = i; // pi has value 3.0
+unsigned char c = -1; // assuming 8-bit chars, c has value 255
+signed char c2 = 256; // assuming 8-bit chars, the value of c2 is undefined
+```
 
 ## Exercise
-## Other Resources
+**Exercise 2.1:** What are the differences between int, long, long long, and short? Between an unsigned and a signed type? Between a float and a double?
+**Answer 2.1:**
+- The difference between int, long, long long, and short is the size of data it stores.
+- Unsigned stores number greater than equal to 0. Signed stores all number negative, 0 and positive.
+- The difference between floar and double is the amount of precision both has.
+
+**Exercise 2.2:** To calculate a mortgage payment, what types would you use for the rate, principal, and payment? Explain why you selected each type.
+**Answer 2.2:**
+- Rate <code>float</code>
+- Principal <code>long long</code>
+- Payment <code>long long</code>
+
+The rate is usually a floating-point number with 4 significant digits. The principal and payment are integral usually less than 1 trillion.
