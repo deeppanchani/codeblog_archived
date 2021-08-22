@@ -196,6 +196,7 @@ C++ has a set of primitive types that includes
 
 **Arithmetic Type:**
 1. Character Type
+
     The bool type represents the truth values true and false.
 
     A <code>char</code> is guaranteed to be big enough to hold numeric values corresponding to the characters in the machine’s basic character set.
@@ -208,8 +209,10 @@ C++ has a set of primitive types that includes
 
     <code>char16_t</code> and <code>char32_t</code> are intended for Unicode characters.
 1. Integer Type
+
     <code>long long</code> >= <code>long</code> >= <code>int</code> >= <code>short</code>
 1. Floating-point Type
+
     They represent single-, double-, and extended-precision values.
 
     <code>float</code> represents one word(32 bits).
