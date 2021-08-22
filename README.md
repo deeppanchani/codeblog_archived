@@ -4,10 +4,13 @@
 
 - [Day 1](cp_blog/day_1.md)
 - [Day 2](cp_blog/day_2.md)
+- [Day 3](cp_blog/day_3.md)
+
 
 ## 100_days_of_code
 
 - [Day 1](100_days_of_code/day_1.md)
+- [Day 2](100_days_of_code/day_2.md)
 
 ## about_the_code_blog
 

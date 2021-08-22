@@ -264,12 +264,14 @@ signed char c2 = 256; // assuming 8-bit chars, the value of c2 is undefined
 
 ## Exercise
 **Exercise 2.1:** What are the differences between int, long, long long, and short? Between an unsigned and a signed type? Between a float and a double?
+
 **Answer 2.1:**
 - The difference between int, long, long long, and short is the size of data it stores.
 - Unsigned stores number greater than equal to 0. Signed stores all number negative, 0 and positive.
 - The difference between floar and double is the amount of precision both has.
 
 **Exercise 2.2:** To calculate a mortgage payment, what types would you use for the rate, principal, and payment? Explain why you selected each type.
+
 **Answer 2.2:**
 - Rate <code>float</code>
 - Principal <code>long long</code>
