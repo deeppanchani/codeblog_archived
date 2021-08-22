@@ -35,13 +35,14 @@ int main(){
     }
 }
 ```
-## Problem #1 Beautiful Matrix
+## Problem #2 Beautiful Matrix
 ### [Problem Statement](http://codeforces.com/problemset/problem/263/A)
 ### Though Process:
 We have to move 1 from any given position to middle of the matrix. By simple permutations we know that to move a given number from one position to another given position in a matrix we have to find absolute differnce of their corrdinate and it will give the number of steps one need to take in that direction.
 
 While taking input I am also searching for 1 so that I can get its corrdinate.(To reduce time)
 ### Related Topics:
+Array, Maths
 ### Code:
 ```c++
 #include <iostream>
@@ -65,4 +66,15 @@ int main(){
     y = abs(y-2);
     cout << x+y;
 }
+```
+
+### Problem #3 Queue at the School
+#### [Problem Statement](http://codeforces.com/problemset/problem/266/B)
+#### Though Process:
+
+#### Related Topics:
+
+#### Code:
+```c++
+
 ```
