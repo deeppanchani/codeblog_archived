@@ -262,6 +262,45 @@ unsigned char c = -1; // assuming 8-bit chars, c has value 255
 signed char c2 = 256; // assuming 8-bit chars, the value of c2 is undefined
 ```
 
+• When we assign one of the nonbool arithmetic types to a bool object, the result is false if the value is 0 and true otherwise.
+
+• When we assign a bool to one of the other arithmetic types, the resulting value is 1 if the bool is true and 0 if the bool is false.
+
+• When we assign a floating-point value to an object of integral type, the value is truncated. The value that is stored is the part before the decimal point.
+
+• When we assign an integral value to an object of floating-point type, the fractional part is zero. Precision may be lost if the integer has more bits than the floating-point object can  accommodate.
+
+• If we assign an out-of-range value to an object of unsigned type, the result is the remainder of the value modulo the number of values the target type can hold. For example, an 8-bit unsigned char can hold values from 0 through 255, inclusive. If we assign a value outside this range, the compiler assigns the remainder of that value modulo 256. Therefore, assigning –1 to an 8-bit unsigned char gives that object the value 255.
+
+• If we assign an out-of-range value to an object of signed type, the result is undefined. The program might appear to work, it might crash, or it might produce garbage values.
+
+```c++
+int i = 42;
+if(i){// condition will evaluate as true
+    i=0;
+}
+```
+> 0 --> Fales
+> Anyother Number --> True
+
+**Expressions Involving Unsigned Types**
+```c++
+unsigned u = 10;
+int i = -42;
+std::cout << i + i << std::endl; // prints -84
+std::cout << u + i << std::endl; // if 32-bit ints, prints 4294967264
+```
+
+From above table we know that unsigned can have max value 4,294,967,295. Hence when we evaluate second expression i which is -42 is converted to unsigned which will wrap around.
+
+1. u + i
+2. 10 + unsigned(-42)
+3. 10 + (4294967296 - 42) 
+    we used 4294967296 as its 2^32.
+4. 4294967264
+
+
+
 ## Exercise
 **Exercise 2.1:** What are the differences between int, long, long long, and short? Between an unsigned and a signed type? Between a float and a double?
 
